@@ -215,7 +215,7 @@
 }
 
 .button:focus-visible {
-  box-shadow: 2px 2px var(--border-color);;
+  box-shadow: 2px 2px var(--border-color);
   transition: box-shadow 0.3s ease;
 }
 
@@ -233,7 +233,7 @@
   transform-origin: center;
 }
 
-.like-icon.is-liked .heart { 
+.like-icon.is-liked .heart {
     animation: heart 0.1s ease-in 1 alternate;
 }
 
@@ -305,15 +305,17 @@
   opacity: 0.5;
   background-clip: text;
   -webkit-background-clip: text;
+  text-stroke: 1px var(--text-shadow);
   -webkit-text-stroke: 1px var(--text-shadow);
   text-shadow: -1px 0 var(--text-shadow), 0 1px var(--text-shadow),
     1px 0 var(--text-shadow), 0 -1px var(--text-shadow);
 }
 
-@supports (text-stroke) {
+@supports (text-stroke: 1px var(--text-shadow)) {
   .watermark-text {
-    background-clip: text;
+    text-shadow: none;
     text-stroke: 1px var(--text-shadow);
+    -webkit-text-stroke: 1px var(--text-shadow);
   }
 }
 
@@ -347,7 +349,6 @@
 
 .footer_save {
   background-color: var(--background-color);
-  border: none;
   margin-block: 50px;
   border: 1px solid var(--border-color);
 }
