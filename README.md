@@ -1,1 +1,1 @@
-https://mst121315.github.io/zakrivayuschiy-teg-f/
+https://github.com/mst121315/zakrivayuschiy-teg-f.git
