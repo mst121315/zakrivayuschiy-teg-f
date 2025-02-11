@@ -14,7 +14,7 @@
     --bg-gradient-light: #e7e7e7;
     --bg-gradient-dark: #1a1a1a;
     --text-shadow: rgb(255, 255, 255, 0.5);
-    --color-backdrop: rgb(0 0 0 / 0.3);
+    --color-backdrop: rgb(0 0 0 / 0.75);
     --heart-contour: #000;
     --heart-body: #FF0000;
     --heart-sparks: #FF0000;
