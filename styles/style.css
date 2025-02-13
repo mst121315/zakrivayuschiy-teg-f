@@ -14,7 +14,7 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-family: var(--font_body), fantasy;
-  font-variation-settings: "wdth" var(--wght-text);
+  font-variation-settings: "wght" var(--wght-text);
   background-image: repeating-linear-gradient(
       var(--background-gradient) 0px 2px,
       var(--bg-gradient-transperent) 2px 4px
@@ -137,7 +137,7 @@
   font-family: var(--font_body), fantasy;
   font-size: var(--font-size-body);
   line-height: 22px;
-  font-weight: 700;
+  font-variation-settings: "wght" var(--wght-title);
   padding-inline: 10px;
   padding-block: 5px;
 }
@@ -145,6 +145,7 @@
 .card-text {
   font-family: var(--font_body), fantasy;
   font-size: var(--font-size-body);
+  font-variation-settings: "wght" var(--wght-text);
   line-height: 21px;
   padding-block-end: 25px;
 }
@@ -169,6 +170,7 @@
   position: relative;
   overflow: hidden;
   transition: outline 0.3s ease;
+  display: flex;
 }
 
 .like-icon {
@@ -198,6 +200,9 @@
 .card__icon-button:focus-visible {
   outline: 2px solid var(--border-color);
   outline-offset: -2px;
+  max-width: 56px;
+  width: 50px;
+  margin-inline-end: 5px;
 }
 
 .button {
@@ -326,6 +331,13 @@
     text-shadow: none;
     text-stroke: 1px var(--text-shadow);
     -webkit-text-stroke: 1px var(--text-shadow);
+  }
+}
+
+@media (width <= 375px) {
+  .watermark-text {
+    top: 6%;
+    right: 2%;
   }
 }
 
